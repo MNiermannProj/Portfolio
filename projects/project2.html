@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Project 1 - Matthew Niermann Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+  </head>
+  <body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+<!-- Top-right nav link -->
+            <nav style="
+                position: fixed;       /* stays in top-right corner */
+                top: 20px;
+                right: 150px;
+                z-index: 1000;         /* above other content */
+            ">
+              <p style="font-weight:bold;
+                  font-size: .75rem;text-decoration: none;">
+                Matthew<br>
+                Niermann<br>
+                Portfolio<br>
+
+                </p>
+            </nav>
+
+            <nav style="
+                position: fixed;       /* stays in top-right corner */
+                top: 20px;
+                Left: 150px;
+                z-index: 1000;         /* above other content */
+            ">
+              <a href="../index.html" class="logo" style="
+                  text-decoration: none;
+                  font-weight: bold;
+                  font-size: .75rem;
+                  color: #000;
+              ">
+                ← Back
+              </a>
+            </nav>
+
+      <div id="main" style="margin-top:0; padding-top:2rem;">
+        <section class="post" style="margin-top:0; padding-top:0;">
+          <header class="major" style="margin-top:0; padding-top:0;">
+            <h1 style="margin:0; padding:0;">NASA Supersonic Air Intake Retrieval System</h1>
+            <p style="margin:0; ">University Project</p>
+          </header>
+
+
+
+<div style="display:flex; justify-content:center; gap:20px; margin-top:20px;">
+  
+  <figure style="text-align:center; margin:0; padding-top:0;">
+    <video autoplay loop muted playsinline style="max-width:50%; height:auto; border-radius:8px;">
+    <source src="../images/rocksat/rocksatGif.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+    <figcaption style="margin-top:8px; font-size:0.9em; font-style:italic; color:#555;">
+      Figure 1: Flow process of air entering system at time stamps throughout flight trajectory
+    </figcaption>
+  </figure>
+
+  
+
+
+</div>
+<!-- Centered video -->
+
+<!-- <div style="display:flex; justify-content:center; align-items:center; width:75%; margin:40px 0;">
+  <video autoplay loop muted playsinline style="max-width:90%; height:auto; border-radius:8px;">
+    <source src="../images/rocksat/rocksatGif.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <figcaption style="margin-top:8px; font-size:0.9em; font-style:italic; color:#555;">
+      Digital Twin Autoinjector
+    </figcaption>
+</div>
+ -->
+
+<h2>Contribution</h2>
+
+            <p>Co-led the development of a supersonic air intake retrieval system designed to sample atmospheric conditions at Mach 3+. My team, under NASA oversight, designed a pressure-regulated payload capable of withstanding extreme launch, ascent, and reentry environments. I spearheaded the intake geometry optimization, applying shock-expansion theory and CFD simulations in ANSYS Fluent to validate performance under high-speed compressible flow. The final system successfully simulated choking conditions, isentropic flow, and Rayleigh/Fanno regimes to optimize sampling efficiency while maintaining containment vessel integrity.<p>
+          </header>
+
+
+          <h2>More Details</h2>
+          <p>
+            The engineering process combined analytical derivations with extensive computational and experimental validation. I performed FEA in ANSYS Mechanical to evaluate thermal stress, vibrational fatigue, and structural survivability under high-dynamic loading. In addition, I contributed to hands-on fabrication by brazing stainless steel containment tanks and machining precision mounts to ensure survivability through thermal shock. By integrating valve systems, flow limiters, and high-pressure vessels into a closed-loop flow path, our design enabled controlled air collection at supersonic speeds, paving the way for future high-altitude atmospheric research missions.
+
+              
+
+          </p>
+                    <p>
+For this project, I designed and analyzed the flow operation of a rocket-mounted air sampling system, which functioned in two stages: a **bleed stage** to purge residual air and stabilize temperatures, and a **sample collection stage** to capture the target atmosphere under controlled conditions. The system included multiple flow paths through valves, a manifold, tubing, and flow restrictors that reached choked flow, enabling predictable and repeatable sampling. Compressible flow theory was applied to model the process, considering shocks, Fanno flow in tubing, and total pressure losses from valves and fittings. MATLAB simulations and analytical methods were used to characterize the flow at key states—before and after oblique and normal shocks, and at the choked flow restrictor.
+
+
+
+              
+
+          </p>
+                    <p>
+Thermal and timing constraints were central to ensuring system reliability. The maximum allowable sampling temperature was 470 K, so stagnation temperature profiles were analyzed to determine a safe sampling window between 15.9–16.8 seconds post-ignition. An optimal collection point was chosen at 16.4 seconds, balancing high Mach number with safe operating conditions. Pressure drops, valve timings, and mass flow rates were calculated to confirm adequate purge efficiency and to predict final tank fill levels. This work ensured the capture system could collect representative atmospheric samples while operating under high-speed, compressible flow conditions in a flight environment.
+              
+
+          </p>
+
+
+
+</a>
+
+
+          <h2>Gallery</h2>
+          <div class="box alt">
+            <div class="row gtr-50 gtr-uniform">
+              
+
+              <div class="col-6"><span class="image fit"><img src="../images/project1-1.jpg" alt="" /></span></div>
+              <div class="col-6"><span class="image fit"><img src="../images/project1-2.jpg" alt="" /></span></div>
+
+            </div>
+          </div>
+        </section>
+      </div>
+
+
+
+<!-- Gallery container -->
+<div id="gallery" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-top: 50px;">
+</div>
+
+<script>
+  // List of images in your folder
+  const images = [
+    "../images/rocksat/launch.jpg",
+        "../images/rocksat/group.webp",
+            "../images/rocksat/nasaInner.jpg",
+                "../images/rocksat/rocket.webp",
+                    "../images/rocksat/shake.webp",
+
+
+    // Add all filenames here
+  ];
+
+  const gallery = document.getElementById("gallery");
+
+  images.forEach(src => {
+    const a = document.createElement("a");
+    a.href = src; // optional: link to full image
+    a.target = "_blank"; // open full image in new tab
+    a.className = "gallery-item";
+
+    const img = document.createElement("img");
+    img.src = src;
+    img.style.width = "250px";       // adjust thumbnail size
+    img.style.height = "auto";
+    img.style.borderRadius = "8px";  // optional styling
+    img.style.boxShadow = "0 4px 6px rgba(0,0,0,0.1)";
+
+    a.appendChild(img);
+    gallery.appendChild(a);
+  });
+</script>
+
+
+
+
+
+
+     
+
+    <!-- Scripts -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery.scrollex.min.js"></script>
+    <script src="../assets/js/jquery.scrolly.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

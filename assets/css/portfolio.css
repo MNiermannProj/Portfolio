@@ -1,0 +1,15 @@
+#main {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  overflow-x: auto;
+  gap: 20px;
+}
+
+#main > article {
+  flex: 0 0 20%;
+  max-width: 20%;
+  min-width: 250px;
+  box-sizing: border-box;
+}
